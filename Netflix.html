@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        .main1{
+            position: relative;  
+        }
+        #img1{
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(30%); 
+        }
+        #img2{
+            position: absolute;
+            top: 20px;
+            left: 130px;
+            width: 11vw;
+            height: 7vh;
+        }
+        .main13{
+            width: 50vw;
+            position: absolute;
+            top: 30vh;
+            left: 25vw;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            font-family: sans-serif;
+        }
+        .main14{
+            position: absolute;
+            top: 70vh;
+            left: 26.5vw;
+            font-family: sans-serif;
+        }
+        .main14 input{
+            width: 30vw;
+            height: 50px;
+            background-color: rgba(45, 45, 45, 0.9);
+            color: white;
+            font-size: large;
+            border-radius: 5px;
+        }
+        .main14 input::placeholder{
+           color: white;
+           padding-left: 40px;
+        }
+        .main14 button{
+            background-color: rgb(204, 4, 4);
+            width: 15vw;
+            height: 56px;
+            color: white;
+            font-size: large;
+            border-radius: 5px;
+        }
+        .main15{
+            position: absolute;
+            top: 20px;
+            right: 130px;
+        }
+        .main15 select{
+            width: 110px;
+            height: 30px;
+            background-color: rgba(45, 45, 45, 0.9);
+            color: white;
+            border-radius: 5px;
+            font-size: large;
+        }
+        .main15 option{
+            background-color: rgb(0, 0, 0);
+        }
+        .main15 button{
+            background-color: rgb(204, 4, 4);
+            width: 80px;
+            height: 32px;
+            border-radius: 5px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="main11">
+            <img src="https://i.pinimg.com/736x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg" alt="" id="img1">
+        </div>
+        <div class="main12">
+            <img src="https://www.dafont.com/forum/attach/orig/7/3/736247.png?1" alt="" id="img2">
+        </div>
+        <div class="main13">
+            <h1><b>Unlimited movies, TV<br>shows and more</b></h1>
+            <h4>Starts at ₹149. Cancel at any time.</h4>
+            <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+        </div>
+        <div class="main14">
+            <table>
+                <tr>
+                    <td><input type="email" placeholder="Email Address" id="int" required></td>
+                    <td><button><b>Get Started ></b></button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="main15">
+            <table>
+                <tr>
+                    <td>
+                        <select>
+                            <option>English</option>
+                            <option>தமிழ்</option>
+                            <option>Hindi</option>
+                            <option>Telugu</option>
+                        </select>
+                    </td>
+                    <td><button>Sign in</button></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>
