@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        #Suitcase{
+            box-shadow: 10px 10px silver;
+            width: 40%;
+            margin-left: 55%;
+            margin-top: 50px;
+            font-size: x-large;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(11, 10, 10);
+            border: 1.5px;
+            border-radius: 30px;
+            
+        }
+        #Suitcase input{
+            width: 300px;
+            height: 40px;
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        #Suitcase button{
+            width: 150px;
+            height: 50px;
+            font-size: large;
+            border-radius: 30px;
+            border: 3px solid black;
+            
+            
+        }
+        td{
+            padding-bottom: 40px;
+            padding-left: 10px;
+        }
+        input::placeholder{
+            font-size: larger;
+            color: black;
+            padding-left: 85px;
+        }
+        body{
+            margin: 0px;
+            background-image:url("https://www.pixelstalk.net/wp-content/uploads/images5/4K-Bike-Image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;  
+
+        }
+        a:hover {
+            color: yellow;
+            font-size: h1;
+        }
+        #sign{
+            color: rgb(255, 234, 0);
+        }
+        #sign:hover{
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="Suitcase">
+        <h1><a Form>Login Form</a></h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="na">Name</label></td>
+                    <td><input type="text" id="na" placeholder="Enter Name here" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nu">Number</label></td>
+                    <td><input type="number" id="nu" placeholder="Enter Number here" required></td>
+                </tr>
+                <tr>
+                    <td><label for="ea">Email</label></td>
+                    <td><input type="email" id="ea" placeholder="Enter Email here" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pa">Password</label></td>
+                    <td><input type="password" id="pa" placeholder="Enter Password here" required></td>
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                    <td><b>Don't  have an account.</b><a id="sign" href="Signup.html">Sign up</a></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>

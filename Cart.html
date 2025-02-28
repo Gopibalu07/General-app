@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart items</title>
+    <style>
+        .main1{
+            position: relative;
+            width: 100vw;
+            height: 100px;
+        }
+        .main11{
+            background-color: rgb(10, 60, 43);
+            height: 100px;
+            width: 100vw;
+        }
+        h1{
+            position: absolute;
+            top: 20px;
+            left: 50vw;
+            color: white;
+            text-align: center;
+        }
+        #navi{
+            position: absolute;
+            top: 60px;
+            right: 20px;
+        }
+        #navi button{
+            background-color: rgb(10, 60, 43);
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+            border: 0px;
+            color: white;
+            font-size: large;
+        }
+        #navi button:hover{
+            background-color: rgb(0, 18, 12); ;
+        }
+        #form{
+            position: absolute;
+            top: 130px;
+            left: 30vw;
+            background-color: rgb(255, 255, 255);
+            width: 40vw;
+            height: 70vh;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow:10px 5px 10px 5px rgb(10, 60, 43);
+        }
+        .main13{
+            position: absolute;
+            top: 2.5vh;
+            left: 0.5vw;
+            width: 40vw;
+            height: 70vh;
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+            padding-bottom: 130px;
+        }
+        .main13 td button{
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(10, 60, 43);
+            position: absolute;
+            top: 55vh;
+            left: 17vw;
+            color: white;
+            font-size: large;
+        }
+        .main13 td button:hover{
+            background-color: rgb(0, 18, 12); ;
+        }
+        .main13 td label{
+            padding-left: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="main11">
+            <header>
+                <h1>Cart</h1>
+                <nav id="navi">
+                        <a href="Home.html"><button>Home</button></a>
+                </nav>
+            </header>
+        </div>
+        <div class="main12">
+            <form action="" id="form">
+                <table class="main13">
+                    <tr>
+                        <td><label for="na" class="main131">Product Details :</label></td>
+                        <td><p>White color <br> Size 'M' <br> Full handed <br> premium</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="na" class="main131">Price Details :</label></td>
+                        <td><p>Rs.549/-</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="na" class="main131">Discount(10%) :</label></td>
+                        <td><p>Rs.549 - 10%</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="na" class="main131">Total :</label></td>
+                        <td><p>Rs.495/-</p></td>
+                    </tr>
+                    <tr>
+                        <td><a href="payment.html"><button>Payment</button></a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

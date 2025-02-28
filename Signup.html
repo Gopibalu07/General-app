@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        .Main{
+            color: black;
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            padding: 30px 70px 30px 70px;
+            font-size: x-large;
+            width: 600px;
+            border-radius: 20px;
+            border: 2px solid rgb(253, 255, 134);
+            box-shadow:10px 5px 10px 5px rgb(255, 245, 58);
+        }
+        .Main:hover{
+            background-color: rgb(248, 234, 199);
+        }
+        h1{
+            position: absolute;
+            top: 50px;
+            left: 175px;
+            color: white;
+            
+        }
+        input{
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+        }
+        body{
+            position: relative;
+            background-image: url(https://i.pinimg.com/736x/71/07/dd/7107dd1d9fe3f4e7b98f38424c356a9c.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #sub{
+            font-size: large;
+        }
+        #sub:hover{
+            background-color: rgb(254, 237, 0);
+        }
+        #log:hover{
+            color: rgb(72, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>User Registration Form!</h1>
+    <form id="signup">
+        <table class="Main">
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" id="username" required></td>
+            </tr>
+            <tr>
+                <td><label>Number</label></td>
+                <td><input type="number" id="number" required></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr><tr>
+                <td><label>Password</label></td>
+                <td><input type="password" id="password" required></td>
+            </tr><tr>
+                <td><label>Confirm Password</label></td>
+                <td><input type="password" id="cpass" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" id="sub"></td><br>
+            </tr>
+            <tr>
+                <td> Already Have an account.<a href="form.html" id="log">Login</a></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        document.getElementById("signup").addEventListener("submit",function(event){
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const number = document.getElementById("number").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const c_pass = document.getElementById("cpass").value;
+
+            localStorage.setItem("username",username);
+            localStorage.setItem("number",number);
+            localStorage.setItem("email",email)
+            localStorage.setItem("password",password);
+            localStorage.setItem("c_pass",cpass)
+
+            alert("User registered successfully!")
+        });
+
+        console.log("stored username:",localStorage.getItem("username"));
+        console.log("stored email:",localStorage.getItem("email"));
+        
+    </script>
+</body>
+</html>
